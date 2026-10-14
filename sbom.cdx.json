@@ -1,0 +1,67 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:cc3ea43f-5b2e-53ec-bff9-c007384fb49a",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-12T06:10:56Z",
+    "component": {
+      "type": "application",
+      "name": "CORENLP",
+      "version": "b8e6e55d1487",
+      "bom-ref": "pkg:generic/anticloud/CORENLP@b8e6e55d1487",
+      "purl": "pkg:generic/anticloud/CORENLP@b8e6e55d1487",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "b8e6e55d1487ede9c5f22a8b77a7912e5a1c2be3"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": ""
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "corenlp-protobuf",
+      "version": ">= 3.8.0",
+      "purl": "pkg:pypi/corenlp-protobuf@3.8.0",
+      "bom-ref": "pypi/corenlp-protobuf@>= 3.8.0"
+    },
+    {
+      "type": "library",
+      "name": "requests",
+      "version": ">= 2.10.0",
+      "purl": "pkg:pypi/requests@2.10.0",
+      "bom-ref": "pypi/requests@>= 2.10.0"
+    },
+    {
+      "type": "library",
+      "name": "six",
+      "version": ">= 1.9",
+      "purl": "pkg:pypi/six@1.9",
+      "bom-ref": "pypi/six@>= 1.9"
+    },
+    {
+      "type": "library",
+      "name": "annotate",
+      "version": "= corenlp.main:main",
+      "purl": "pkg:pypi/annotate@corenlp.main:main",
+      "bom-ref": "pypi/annotate@= corenlp.main:main"
+    }
+  ]
+}
